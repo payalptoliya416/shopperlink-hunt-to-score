@@ -104,7 +104,7 @@ html {
   margin: 0 auto 15px;
 }
 
-.hero-info .btn {
+.hero-info .color-text {
   background-color: white;
   color: #ff0000;
   font-size: 32px;
@@ -112,6 +112,7 @@ html {
   font-weight: 700;
   padding: 20px 100px;
   border-radius: 40px;
+  display: inline-block;
 }
 .redeem-data {
   padding: 80px 0;
@@ -211,7 +212,7 @@ footer {
     line-height: 26px;
     max-width: 400px;
   }
-  .hero-info .btn {
+  .hero-info .color-text {
     font-size: 28px;
     line-height: 30px;
     padding: 16px 79px;
@@ -250,7 +251,7 @@ footer {
         max-width: 296px;
 
     }
-    .hero-info .btn {
+    .hero-info .color-text {
         font-size: 20px;
         line-height: 26px;
         padding: 10px 70px;
@@ -325,7 +326,7 @@ footer {
         line-height: 16px;
         max-width: 230px;
     }
-    .hero-info .btn {
+    .hero-info .color-text {
         font-size: 18px;
         line-height: 24px;
         padding: 8px 58px;
