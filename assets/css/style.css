@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body,
+html {
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+}
+
+/* ----main--start-- */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 768px;
+  margin: auto;
+  overflow: hidden;
+}
+.container {
+  max-width: 640px !important;
+  padding: 0 10px;
+  margin: auto;
+}
+/* ----main--end-- */
+
+/* --hero -start */
+.hero_sec {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero_sec::before {
+  position: absolute;
+  content: "";
+  background-image: url("../image/bg.png");
+  background-size: cover;
+  background-position: 106% 41%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.hero_sec::after {
+  position: absolute;
+  background: linear-gradient(
+    192deg,
+    #e16726 0%,
+    #e16726 8%,
+    #f8ba11 25%,
+    #f8ba11 50%,
+    #e16726 75%,
+    #bd4328 85%,
+    #bd4328 100%
+  );
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.hero-info .congras-para {
+  font-size: 26px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  font-weight: 700;
+  margin: 20px auto 30px;
+}
+.hero-img {
+  text-align: center;
+}
+.hero-img img {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+.hero-info .para {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 376px;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+
+.hero-info .btn {
+  background-color: white;
+  color: #ff0000;
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+  padding: 20px 100px;
+  border-radius: 40px;
+}
+.redeem-data {
+  padding: 80px 0;
+}
+.redeem-info {
+  padding-left: 20px;
+}
+.redeem-info h3 {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.redeem-info p {
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.redeem-info p:nth-child(2) {
+  margin-bottom: 40px;
+}
+.term-condition {
+  margin-bottom: 50px;
+}
+.term-condition p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  margin-bottom: 0;
+}
+/* -end */
+
+/* --footer--start */
+footer {
+  background-color: white;
+  padding: 40px 0;
+}
+.footer-data {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer-data img {
+  width: 100%;
+  max-width: 60px;
+  object-fit: cover;
+}
+.footer-data h3 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+}
+/* --footer--end */
+
+/* --responsive- */
+@media (max-width: 767px) {
+  .container {
+    max-width: 600px !important;
+  }
+  .redeem-info p {
+    font-size: 23px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 550px !important;
+  }
+  .redeem-info h3 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .redeem-info p {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .term-condition p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 460px !important;
+  }
+  .hero-info .congras-para {
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 400px;
+  }
+  .hero-info .btn {
+    font-size: 28px;
+    line-height: 30px;
+    padding: 16px 79px;
+  }
+  .redeem-info h3 {
+    font-size: 22px;
+    line-height: 24px;
+}
+.redeem-info p {
+    font-size: 18px;
+    line-height: 22px;
+}
+.redeem-data {
+    padding: 50px 0;
+}
+.term-condition {
+    margin-bottom: 35px;
+}
+}
+
+@media (max-width: 490px) {
+    .container {
+        max-width: 400px !important;
+        padding: 0 20px;
+      }
+    .hero-info .congras-para {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .hero-img img {
+        max-width: 200px;
+    }
+    .hero-info .para{
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 296px;
+
+    }
+    .hero-info .btn {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 10px 70px;
+    } */
+    .redeem-info h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .redeem-info p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .redeem-info {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .term-condition p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .redeem-data {
+        padding: 40px 0;
+    }
+    .footer-data h3{
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .footer-data img {
+        max-width: 50px;
+      }
+}
+
+@media (max-width: 430px) {
+    .redeem-info p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .redeem-info h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .redeem-info p:nth-child(2) {
+        margin-bottom: 25px;
+    }
+    .term-condition p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .term-condition p {
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .redeem-info h3 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .redeem-info p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 320px) {
+    .hero-info .congras-para {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .hero-info .para {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 230px;
+    }
+    .hero-info .btn {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 8px 58px;
+    }
+    .redeem-info{
+        padding: 0;
+    }
+    .redeem-info h3 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .redeem-info p:nth-child(2) {
+        margin-bottom: 14px;
+    }
+    .redeem-info p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
